@@ -36,9 +36,9 @@ yaml.description
 ```ruby
 yaml.dump
 
-#---
-#title: Even More Amazing Content!
-#description: ...
+# ---
+# title: Even More Amazing Content!
+# description: ...
 ```
 
 # TODO

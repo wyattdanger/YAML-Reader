@@ -9,11 +9,11 @@ class YAMLReader < OpenStruct
   end
 
   def dump
-    marshal_dump.reduce({}) {|h,(k,v)| h[k.to_s]=v; h}.to_yaml
+    marshal_dump.reduce({}) { |h, (k,v)| h[k.to_s]=v; h}.to_yaml
   end
 
   def save_as file_path
-    File.open( file_path, 'w' ) { |f| f.write dump }
+    File.open(file_path, 'w') { |f| f.write dump }
   end
 
   def save

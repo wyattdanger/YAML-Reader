@@ -15,7 +15,7 @@ class YAMLReader
 
   def method_missing symbol, *arguments, &block
     if symbol.match /^_data=?$/
-      raise YAMLReaderException, "Do not touch _data"
+      raise YAMLReaderException, "_data is not public"
     elsif symbol.to_s =~ /^(.*)=$/
       add_pair $1, *arguments
     elsif @_data.include? symbol.to_s

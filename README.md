@@ -36,3 +36,14 @@ yaml.description
 ```ruby
 yaml.dump
 ```
+
+# TODO
+
+## Write the updated YAML object to file
+```ruby
+yaml.save
+#=> true
+
+yaml.save_as '/path/to/new_yaml_file.yaml'
+#=> true
+```

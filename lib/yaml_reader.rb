@@ -16,4 +16,8 @@ class YAMLReader < OpenStruct
     File.open( file_path, 'w' ) { |f| f.write dump }
   end
 
+  def save
+    save_as @yaml_file_path
+  end
+
 end

@@ -43,13 +43,14 @@ yaml.dump
 # description: ...
 ```
 
-# TODO
-
 ## Write the updated YAML data to file
+
+```ruby
+yaml.save_as '/path/to/new_yaml_file.yaml'
+# true
+```
+
 ```ruby
 yaml.save
 # true
 
-yaml.save_as '/path/to/new_yaml_file.yaml'
-# true
-```

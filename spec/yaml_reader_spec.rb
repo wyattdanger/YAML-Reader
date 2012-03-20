@@ -25,5 +25,8 @@ describe YAMLReader do
     YAML.load(@sample.dump).should eq(YAML.load_file(@file))
   end
 
-  it "writes out a YAML file"
+  it "writes out a YAML file with save_as"
+  it "writes over a YAML file with save"
+  it "throws an exception if save is called without an existing file path"
+
 end

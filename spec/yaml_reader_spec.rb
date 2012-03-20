@@ -15,12 +15,6 @@ describe YAMLReader do
     @sample.body.should eq "excellent"
   end
 
-  it "does not allow its private data to be overridden" do
-    Proc.new {
-      @sample._data = {}
-    }.should raise_error YAMLReader::YAMLReaderException
-  end
-
   it "dumps to YAML format" do
     YAML.load(@sample.dump).should eq(YAML.load_file(@file))
   end

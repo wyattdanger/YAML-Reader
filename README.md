@@ -1,6 +1,6 @@
 # Yaml Reader
 
-Written for fun as an exercise in Ruby.  Perhaps you have a YAML file:
+Written for fun one evening as an exercise in Ruby.  Perhaps you have a YAML file:
 
 ```yaml
 ---
@@ -16,7 +16,7 @@ yaml = YAMLReader.new 'path/to/yaml_file.yaml'
 ## Fetch data from the file
 ```ruby
 yaml.title
-# => "Amazing Content"
+# "Amazing Content"
 ```
 
 ## Add and update data 
@@ -25,10 +25,10 @@ yaml.title = "Even More Amazing Content!"
 yaml.description = "..."
 
 yaml.title
-# => "Even More Amazing Content!"
+# "Even More Amazing Content!"
 
 yaml.description
-# => "..."
+# "..."
 ```
 
 ## Dump the data to string to be written to new YAML file
@@ -43,11 +43,11 @@ yaml.dump
 
 # TODO
 
-## Write the updated YAML object to file
+## Write the updated YAML data to file
 ```ruby
 yaml.save
-#=> true
+# true
 
 yaml.save_as '/path/to/new_yaml_file.yaml'
-#=> true
+# true
 ```

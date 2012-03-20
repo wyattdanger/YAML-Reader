@@ -35,6 +35,10 @@ yaml.description
 
 ```ruby
 yaml.dump
+
+#---
+#title: Even More Amazing Content!
+#description: ...
 ```
 
 # TODO

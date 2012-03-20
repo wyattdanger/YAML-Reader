@@ -28,7 +28,7 @@ yaml.title
 # => "Even More Amazing Content!"
 
 yaml.description
-# => "Even More Amazing Content!"
+# => "..."
 ```
 
 ## Dump the data to string to be written to new YAML file

@@ -1,6 +1,8 @@
 # Yaml Reader
 
-Written for fun one evening as an exercise in Ruby.  Perhaps you have a YAML file:
+Written for fun one evening as an exercise in Ruby.  My goal was an easy way to load any YAML file and interact with it using dot notation.
+
+Perhaps you have a YAML file:
 
 ```yaml
 ---
